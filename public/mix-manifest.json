@@ -1,5 +1,8 @@
 {
     "/js/clean-blog.js": "/js/clean-blog.js",
+    "/css/bootstrap.css": "/css/bootstrap.css",
+    "/css/font-awesome.css": "/css/font-awesome.css",
+    "/css/clean-blog.css": "/css/clean-blog.css",
     "/js/slideout.min.js": "/js/slideout.min.js",
     "/js/siema.min.js": "/js/siema.min.js"
 }
