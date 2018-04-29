@@ -1,7 +1,11 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "artika-laravel",
+    "description": "A project created with Laravel and Bootstrap.",
+    "keywords": [
+      "laravel",
+      "bootstrap",
+      "sass"
+    ],
     "license": "MIT",
     "type": "project",
     "require": {
