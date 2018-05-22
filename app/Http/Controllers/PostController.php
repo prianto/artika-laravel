@@ -8,7 +8,8 @@ use App\Post;
 
 class PostController extends Controller
 {
-  function article (Request $request) {
+  function article (Request $request)
+  {
     $slug = $request->slug;
 
     $article = Post::where('slug', 'like', $slug)
@@ -20,7 +21,8 @@ class PostController extends Controller
     return view('post.article', ['article' => $article]);
   }
 
-  function page (Request $request) {
+  function page (Request $request)
+  {
     $slug = $request->slug;
 
     $page = Post::where('slug', 'like', $slug)

@@ -10,7 +10,8 @@ use App\Category;
 
 class CategoryController extends Controller
 {
-  function all (Request $request) {
+  function all (Request $request)
+  {
     $welcome = new WelcomeController();
     $slider_ids = $welcome->get_slider_ids();
 
@@ -29,7 +30,8 @@ class CategoryController extends Controller
     ]);
   }
 
-  function single (Request $request) {
+  function single (Request $request)
+  {
     $slug = $request->slug;
 
     $category = Category::where('slug', 'like', $slug)

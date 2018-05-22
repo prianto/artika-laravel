@@ -8,7 +8,8 @@ use App\Post;
 
 class SearchController extends Controller
 {
-  function result (Request $request) {
+  function result (Request $request)
+  {
     $q = null;
     $req_q = $request->q;
     if(strlen($req_q)) {

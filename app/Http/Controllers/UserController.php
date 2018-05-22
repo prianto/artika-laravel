@@ -10,7 +10,8 @@ use App\User;
 
 class UserController extends Controller
 {
-  function single (Request $request) {
+  function single (Request $request)
+  {
     $name = $request->name;
 
     $user = User::where('name', 'like', $name)

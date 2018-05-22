@@ -10,7 +10,8 @@ use App\Post;
 
 class WelcomeController extends Controller
 {
-  function index () {
+  function index ()
+  {
     $sliders = $this->get_sliders();
 
     $slider_ids = $this->get_slider_ids();
@@ -32,7 +33,8 @@ class WelcomeController extends Controller
     );
   }
 
-  protected function get_sliders () {
+  protected function get_sliders ()
+  {
     $sliders = Cache::get('sliders', function () {
       return Post::where('post_type', 'article')
         ->where('is_feature', 1)
@@ -46,7 +48,8 @@ class WelcomeController extends Controller
     return $sliders;
   }
 
-  public function get_slider_ids () {
+  public function get_slider_ids ()
+  {
     $sliders = $this->get_sliders();
 
     $slider_ids = Cache::get('slider_ids', function () use ($sliders) {
@@ -59,5 +62,5 @@ class WelcomeController extends Controller
 
     return $slider_ids;
   }
-  
+
 }

@@ -8,9 +8,10 @@ use App\Contact;
 
 class ContactController extends Controller
 {
-  function submit (Request $request) {
+  function submit (Request $request)
+  {
     return redirect('contact/sent')->with('messageSent', 'Message sent! We\'ll reply to you as soon as possible.');
-    
+
     $ip_address = $request->ip();
     $name = $request->name;
     $email = $request->email;
