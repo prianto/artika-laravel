@@ -38,3 +38,5 @@ Route::get('user/{name}', 'UserController@single');
 Route::get('page/{slug}', 'PostController@page');
 
 Route::get('{slug}', 'PostController@article');
+
+Route::get('test/error', 'TestController@error');
