@@ -11,6 +11,10 @@
 |
 */
 
+if (env('APP_ENV') === 'production') {
+  \URL::forceScheme('https');
+}
+
 Route::get('/', 'WelcomeController@index');
 
 Route::get('category/all', 'CategoryController@all');
